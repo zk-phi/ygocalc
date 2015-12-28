@@ -1,0 +1,111 @@
+<html>
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="./js/assets/jquery.js"></script>
+    <script type="text/javascript" src="./js/assets/ui.js"></script>
+    <script type="text/javascript" src="./js/assets/3d/cannon.js"></script>
+    <script type="text/javascript" src="./js/assets/3d/three.js"></script>
+    <script type="text/javascript" src="./js/assets/3d/css3drenderer.js"></script>
+    <script type="text/javascript" src="./js/ygocalc.js"></script>
+    <script type="text/javascript" src="./js/dice.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/ygocalc.css">
+    <title>ygocalc</title>
+  </head>
+
+  <body>
+
+    <!-- title -->
+
+    <div id="initial_screen" class="screen">
+      <div id="message_row" class="row">
+        <div class="cell">
+          <h1>ygocalc</h1>
+          <p>スマホを横向きにしてください。</p>
+          <p>rotate to start</p>
+        </div>
+      </div>
+      <div id="ad_row" class="row">
+        <div class="cell"></div>
+      </div>
+    </div>
+
+    <!-- main -->
+
+    <div id="main_screen" class="screen">
+      <div class="lp player cell">8000</div>
+      <div class="lp opponent cell">8000</div>
+    </div>
+
+    <div id="buttons">
+      <span id="history_button" class="button">History</span>
+      <span id="dice_button" class="button">Dice</span>
+      <span id="coin_button" class="button">Coin</span>
+      <span id="yujo_button" class="button">Yu-Jo</span>
+      <span id="timer_button" class="button">Timer</span>
+    </div>
+
+    <div id="credits">
+      Designed for Smartphones by <a href="http://twitter.com/zk_phi/">@zk_phi</a>.
+    </div>
+
+    <!-- history (WIP) -->
+
+    <div id="history_screen" class="screen">
+      <div class="cell">
+        <div class="closebtn">×</div>
+        <h1>History</h1>
+        <ul>
+        </ul>
+        <p><a id="history_mail">[Save history via Email]</a></p>
+      </div>
+    </div>
+
+    <!-- damage selector -->
+
+    <div id="diff_screen" class="screen">
+      <div class="cell"></div>
+    </div>
+
+    <div id="grid_screen" class="screen">
+      <div class="row">
+        <div class="cell"></div><div class="cell"></div><div class="cell"></div>
+        <div class="cell"></div><div class="cell"></div><div class="cell"></div>
+        <div class="cell"></div><div class="cell"></div><div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+      <div class="row">
+        <div class="cell"></div><div class="cell"></div><div class="cell"></div>
+        <div class="cell"></div><div class="cell"></div><div class="cell"></div>
+        <div class="cell"></div><div class="cell"></div><div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+      <div class="row">
+        <div class="cell"></div><div class="cell"></div><div class="cell"></div>
+        <div class="cell"></div><div class="cell"></div><div class="cell"></div>
+        <div class="cell"></div><div class="cell"></div><div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+      <div class="row">
+        <div class="cell"></div><div class="cell"></div><div class="cell"></div>
+        <div class="cell"></div><div class="cell"></div><div class="cell"></div>
+        <div class="cell"></div><div class="cell"></div><div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+      <div class="row">
+        <div class="cell"></div><div class="cell"></div><div class="cell"></div>
+        <div class="cell"></div><div class="cell"></div><div class="cell"></div>
+        <div class="cell"></div><div class="cell"></div><div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+    </div>
+
+    <!-- 3d animation -->
+
+    <div id="animation_screen" class="screen">
+      <div class="cell">
+      </div>
+    </div>
+
+  </body>
+</html>
